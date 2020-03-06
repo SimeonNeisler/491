@@ -5,6 +5,8 @@ garbage_words = ["’", "”", "“", "-"]
 pArts = []
 nArts = []
 
+
+#This walks over the documents that a user has assembled in their articles directories. To get this part working simply place the articles you would use into the articles/positive directory for good news articles and the articles/negative directory for bad news articles. (Only tested on .txt files so far)
 function assembleDocs()
     for(root, dirs, files) in walkdir("./articles/positive")
         for file in files
